@@ -9,8 +9,17 @@
     -fx-background-color: #008F65;
 }
 
+#config {
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/settings.png");
+}
+
+#config:hover {
+        -fx-graphic: url("../img/settingsh.png");
+}
+
 .label{
-     -fx-text-fill: black;
+     -fx-text-fill: #3D3D3D;
      -fx-font: 18px Verdana;
 }
 
@@ -23,17 +32,12 @@
 
 .hyperlink {
     -fx-border-color: transparent;
-    -fx-text-fill: #00B065;
+    -fx-text-fill: #3D3D3D;
     -fx-font: 20px Arial;
+    -fx-font-weight: bold;
 }
 
 .hyperlink:hover {
     -fx-text-fill: #008F65;
     -fx-underline: false;
 }
-
-/*
-#back {
-    -fx-text-fill: #00B065;
-    -fx-font: 20px Arial;
-}*/
