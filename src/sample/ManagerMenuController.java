@@ -15,4 +15,12 @@ public class ManagerMenuController {
         window.setScene(homePageScene);
         window.show();
     }
+
+    public void changeScreenSettingsPressed(ActionEvent event) throws Exception{
+        Parent settingsParent = FXMLLoader.load(getClass().getResource("/sample/settings.fxml"));
+        Scene settingsScene = new Scene(settingsParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(settingsScene);
+        window.show();
+    }
 }
