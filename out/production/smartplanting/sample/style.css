@@ -1,0 +1,39 @@
+.button {
+    -fx-background-color: #00B065;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font: 24px Verdana;
+}
+
+.button:hover {
+    -fx-background-color: #008F65;
+}
+
+.label{
+     -fx-text-fill: black;
+     -fx-font: 18px Verdana;
+}
+
+#title {
+    -fx-text-fill: black;
+    -fx-font: 55px Calibri;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.hyperlink {
+    -fx-border-color: transparent;
+    -fx-text-fill: #00B065;
+    -fx-font: 20px Arial;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #008F65;
+    -fx-underline: false;
+}
+
+/*
+#back {
+    -fx-text-fill: #00B065;
+    -fx-font: 20px Arial;
+}*/
