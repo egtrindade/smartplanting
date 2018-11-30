@@ -16,7 +16,7 @@
 
        <ImageView fitHeight="95.0" fitWidth="108.0" layoutX="659.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
            <image>
-               <Image url="@../img/leaf.png"/>
+               <Image url="@../img/leaf.png" />
                <!--Icon made by Roundicons from www.flaticon.com-->
            </image>
        </ImageView>
@@ -27,7 +27,7 @@
            <children>
                 <Button mnemonicParsing="false" onAction="#changeScreenManagerPressed" prefHeight="60.0" prefWidth="250.0" text="Gerente" />
 
-                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="Funcionário" />
+                <Button mnemonicParsing="false" onAction="#changeScreenEmployeePressed" prefHeight="60.0" prefWidth="250.0" text="Funcionário" />
            </children>
            <GridPane.margin>
                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

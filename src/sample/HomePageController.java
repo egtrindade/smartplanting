@@ -16,4 +16,12 @@ public class HomePageController {
             window.setScene(loginManagerScene);
             window.show();
     }
+
+    public void changeScreenEmployeePressed(ActionEvent event) throws Exception {
+        Parent employeeMenuParent = FXMLLoader.load(getClass().getResource("/sample/employeeMenu.fxml"));
+        Scene employeeMenuScene = new Scene(employeeMenuParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(employeeMenuScene);
+        window.show();
+    }
 }
