@@ -13,7 +13,7 @@
 
         <Label layoutX="420.0" layoutY="168.0" text="Entrar como:" />
 
-        <Label id="manager" layoutX="440.0" layoutY="204.0" text="Gerente" />
+        <Label id="greenLabel" layoutX="435.0" layoutY="203.0" text="Gerente" />
 
         <TextField fx:id="managerKey" layoutX="375.0" layoutY="257.0" prefHeight="33.0" prefWidth="211.0" promptText="Insira a Chave de Gerente" />
 

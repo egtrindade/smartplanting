@@ -24,4 +24,12 @@ public class ManagerMenuController {
         window.setScene(settingsScene);
         window.show();
     }
+
+    public void changeScreenDroneReportsPressed(ActionEvent event) throws Exception {
+        Parent droneReportsParent = FXMLLoader.load(getClass().getResource("/sample/droneReports.fxml"));
+        Scene droneReportsScene = new Scene(droneReportsParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(droneReportsScene);
+        window.show();
+    }
 }

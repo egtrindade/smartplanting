@@ -30,8 +30,9 @@
     -fx-font-style: italic;
 }
 
-#manager {
+#greenLabel {
     -fx-text-fill: #00B065;
+    -fx-font: 20px Verdana;
     -fx-font-weight: bold;
 }
 
