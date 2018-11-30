@@ -32,4 +32,12 @@ public class ManagerMenuController {
         window.setScene(droneReportsScene);
         window.show();
     }
+
+    public void changeScreenSoilQualityReportsPressed(ActionEvent event) throws Exception {
+        Parent soilQualityReportsParent = FXMLLoader.load(getClass().getResource("/sample/soilQualityReports.fxml"));
+        Scene soilQualityReportsScene = new Scene(soilQualityReportsParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(soilQualityReportsScene);
+        window.show();
+    }
 }
