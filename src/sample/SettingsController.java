@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class SettingsController {
 
-    public void changeScreenMenuPressed(ActionEvent event) throws Exception{
+    public void changeScreenMenuPressed(ActionEvent event) throws Exception {
         Parent menuParent = FXMLLoader.load(getClass().getResource("/sample/managerMenu.fxml"));
         Scene menuScene = new Scene(menuParent);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

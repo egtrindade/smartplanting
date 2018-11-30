@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class HomePageController {
 
-    public void changeScreenManagerPressed(ActionEvent event) throws Exception{
+    public void changeScreenManagerPressed(ActionEvent event) throws Exception {
             Parent loginManagerParent = FXMLLoader.load(getClass().getResource("/sample/managerLogin.fxml"));
             Scene loginManagerScene = new Scene(loginManagerParent);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

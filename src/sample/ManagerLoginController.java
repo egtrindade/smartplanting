@@ -19,7 +19,7 @@ public class ManagerLoginController {
     private Label wrongKey;
 
     public void changeScreenManagerLogin(ActionEvent event) throws Exception {
-        if (managerKey.getText().equals("H42WX")) {
+        if (managerKey.getText().equals("H42WX")){
             Parent managerMenuParent = FXMLLoader.load(getClass().getResource("/sample/managerMenu.fxml"));
             Scene managerMenuScene = new Scene(managerMenuParent);
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

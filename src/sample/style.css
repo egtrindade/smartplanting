@@ -18,7 +18,7 @@
     -fx-graphic: url("../img/settingsh.png"); /*Icon made by Smashicons from www.flaticon.com*/
 }
 
-.label{
+.label {
      -fx-text-fill: #3D3D3D;
      -fx-font: 18px Verdana;
 }
