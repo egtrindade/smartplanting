@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="640" prefWidth="960" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginManagerController">
+<AnchorPane prefHeight="640" prefWidth="960" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManagerLoginController">
     <children>
 
         <Hyperlink layoutX="40.0" layoutY="32.0" onAction="#changeScreenHomePagePressed" text="&lt; Página Inicial" />
@@ -18,6 +18,7 @@
         <TextField fx:id="managerKey" layoutX="375.0" layoutY="257.0" prefHeight="33.0" prefWidth="211.0" promptText="Insira a Chave de Gerente" />
 
         <Button layoutX="424.0" layoutY="303.0" mnemonicParsing="false" onAction="#changeScreenManagerLogin" text="Entrar" />
-      <Label layoutX="454.0" layoutY="378.0" text="Label" />
+
+       <Label id="key" fx:id="wrongKey" alignment="CENTER" layoutX="372.0" layoutY="377.0" prefHeight="23.0" prefWidth="211.0" />
     </children>
 </AnchorPane>

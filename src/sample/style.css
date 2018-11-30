@@ -35,6 +35,10 @@
     -fx-font-weight: bold;
 }
 
+#key {
+    -fx-text-fill: red;
+}
+
 .hyperlink {
     -fx-border-color: transparent;
     -fx-text-fill: #3D3D3D;

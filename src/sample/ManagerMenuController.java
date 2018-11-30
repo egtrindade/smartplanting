@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class ManagerMenuController {
+
     public void changeScreenHomePagePressed(ActionEvent event) throws Exception{
         Parent homePageParent = FXMLLoader.load(getClass().getResource("/sample/homePage.fxml"));
         Scene homePageScene = new Scene(homePageParent);

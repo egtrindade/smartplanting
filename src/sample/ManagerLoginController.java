@@ -9,17 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-public class LoginManagerController {
+
+public class ManagerLoginController {
 
     @FXML
     private TextField managerKey;
 
     @FXML
-    private TextField incorrectKey;
-
-/*    public LoginManagerController(){
-        incorrectKey.setVisible(false);
-    }*/
+    private Label wrongKey;
 
     public void changeScreenManagerLogin(ActionEvent event) throws Exception {
         if (managerKey.getText().equals("H42WX")) {
@@ -29,7 +26,7 @@ public class LoginManagerController {
             window.setScene(managerMenuScene);
             window.show();
         } else {
-            //incorrectKey.setVisible(true);
+            wrongKey.setText("Chave Incorreta");
         }
     }
 
