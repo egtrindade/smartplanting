@@ -15,9 +15,9 @@
 
         <Label id="greenLabel" layoutX="435.0" layoutY="203.0" text="Gerente" />
 
-        <TextField fx:id="managerKey" layoutX="375.0" layoutY="257.0" prefHeight="33.0" prefWidth="211.0" promptText="Insira a Chave de Gerente" />
+        <TextField fx:id="managerKey" layoutX="375.0" layoutY="257.0" onKeyPressed="#changeScreenEnterKeyPressed" prefHeight="33.0" prefWidth="211.0" promptText="Insira a Chave de Gerente" />
 
-        <Button layoutX="427.0" layoutY="331.0" mnemonicParsing="false" onAction="#changeScreenManagerLogin" text="Entrar" />
+        <Button layoutX="427.0" layoutY="331.0" mnemonicParsing="false" onAction="#changeScreenEnterButtonPressed" text="Entrar" />
 
         <Label id="key" fx:id="wrongKey" alignment="CENTER" layoutX="375.0" layoutY="415.0" prefHeight="23.0" prefWidth="211.0" />
 

@@ -8,7 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
+import javafx.scene.input.InputEvent;
 
 public class ManagerLoginController {
 
@@ -18,7 +21,7 @@ public class ManagerLoginController {
     @FXML
     private Label wrongKey;
 
-    public void changeScreenManagerLogin(ActionEvent event) throws Exception {
+    public void changeScreenEnterButtonPressed(ActionEvent event) throws Exception {
         if (managerKey.getText().equals("H42WX")){
             Parent managerMenuParent = FXMLLoader.load(getClass().getResource("/sample/managerMenu.fxml"));
             Scene managerMenuScene = new Scene(managerMenuParent);
@@ -27,6 +30,20 @@ public class ManagerLoginController {
             window.show();
         } else {
             wrongKey.setText("Chave Incorreta");
+        }
+    }
+
+    public void changeScreenEnterKeyPressed(KeyEvent event) throws Exception {
+        if(event.getCode() == KeyCode.ENTER) {
+            if (managerKey.getText().equals("H42WX")) {
+                Parent managerMenuParent = FXMLLoader.load(getClass().getResource("/sample/managerMenu.fxml"));
+                Scene managerMenuScene = new Scene(managerMenuParent);
+                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                window.setScene(managerMenuScene);
+                window.show();
+            } else {
+                wrongKey.setText("Chave Incorreta");
+            }
         }
     }
 
