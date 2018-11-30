@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640" prefWidth="960" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.IdealSoilQualityRepController">
+    <children>
+
+        <Hyperlink layoutX="40.0" layoutY="32.0" onAction="#changeScreenMenuPressed" text="&lt; Menu" />
+
+        <Label id="greenLabel" layoutX="261.0" layoutY="36.0" text="Repositório de Qualidade Ideal do Solo" />
+
+    </children>
+</AnchorPane>

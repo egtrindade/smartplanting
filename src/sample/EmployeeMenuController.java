@@ -17,4 +17,19 @@ public class EmployeeMenuController {
         window.show();
     }
 
+    public void changeIdealSoilQualityRepPressed(ActionEvent event) throws Exception {
+        Parent idealSoilQualityRepParent = FXMLLoader.load(getClass().getResource("/sample/idealSoilQualityRep.fxml"));
+        Scene idealSoilQualityRepScene = new Scene(idealSoilQualityRepParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(idealSoilQualityRepScene);
+        window.show();
+    }
+
+    public void changeScreenAgrotoxicRepPressed(ActionEvent event) throws Exception {
+        Parent agrotoxicRepParent = FXMLLoader.load(getClass().getResource("/sample/agrotoxicRep.fxml"));
+        Scene agrotoxicRepScene = new Scene(agrotoxicRepParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(agrotoxicRepScene);
+        window.show();
+    }
 }
