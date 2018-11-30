@@ -18,7 +18,7 @@
            <children>
                 <Button mnemonicParsing="false" onAction="#changeScreenDroneReportsPressed" prefHeight="70.0" prefWidth="500.0" text="Relatórios dos Drones" textAlignment="CENTER" wrapText="true" />
                 <Button mnemonicParsing="false" onAction="#changeScreenSoilQualityReportsPressed" prefHeight="70.0" prefWidth="500.0" text="Relatórios de Qualidade do Solo" textAlignment="CENTER" wrapText="true" />
-                <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="500.0" text="Agendar Aplicação de Agrotóxico" textAlignment="CENTER" wrapText="true" />
+                <Button mnemonicParsing="false" onAction="#changeScheduleAgroApplicationPressed" prefHeight="70.0" prefWidth="500.0" text="Agendar Aplicação de Agrotóxico" textAlignment="CENTER" wrapText="true" />
            </children>
            <GridPane.margin>
                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

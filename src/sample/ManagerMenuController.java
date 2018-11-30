@@ -40,4 +40,12 @@ public class ManagerMenuController {
         window.setScene(soilQualityReportsScene);
         window.show();
     }
+
+    public void changeScheduleAgroApplicationPressed(ActionEvent event) throws Exception {
+        Parent soilQualityReportsParent = FXMLLoader.load(getClass().getResource("/sample/scheduleAgroApplication.fxml"));
+        Scene soilQualityReportsScene = new Scene(soilQualityReportsParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(soilQualityReportsScene);
+        window.show();
+    }
 }
