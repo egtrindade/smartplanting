@@ -12,29 +12,27 @@
 <AnchorPane prefHeight="640" prefWidth="960" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
    <children>
 
-      <VBox alignment="CENTER" layoutX="355.0" layoutY="320.0" spacing="50.0" GridPane.rowIndex="3">
-         <children>
-            <Button mnemonicParsing="false" onAction="#changeScreenManagerPressed" prefHeight="60.0" prefWidth="250.0" text="Gerente" />
+      <Label id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="309.0" layoutY="131.0" text="Smart Planting" GridPane.rowIndex="1" />
 
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="Funcionário" />
-         </children>
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
+       <ImageView fitHeight="95.0" fitWidth="108.0" layoutX="659.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../img/leaf.png"/>
+               <!--Icon made by Roundicons from www.flaticon.com-->
+           </image>
+       </ImageView>
+
+       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="420.0" layoutY="250.0" text="Entrar como:" textAlignment="CENTER" GridPane.rowIndex="2" />
+
+       <VBox alignment="CENTER" layoutX="355.0" layoutY="320.0" spacing="50.0" GridPane.rowIndex="3">
+           <children>
+                <Button mnemonicParsing="false" onAction="#changeScreenManagerPressed" prefHeight="60.0" prefWidth="250.0" text="Gerente" />
+
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="Funcionário" />
+           </children>
+           <GridPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </GridPane.margin>
       </VBox>
-
-      <Label id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="309.0" layoutY="131.0" text="Smart Planting" GridPane.rowIndex="1">
-      </Label>
-
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="420.0" layoutY="250.0" text="Entrar como:" textAlignment="CENTER" GridPane.rowIndex="2">
-      </Label>
-
-      <ImageView fitHeight="95.0" fitWidth="108.0" layoutX="659.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/leaf.png"/>
-            <!--Icon made by Roundicons from www.flaticon.com-->
-         </image>
-      </ImageView>
 
    </children>
 </AnchorPane>
