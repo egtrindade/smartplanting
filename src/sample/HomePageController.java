@@ -10,10 +10,10 @@ import javafx.stage.Stage;
 public class HomePageController {
 
     public void changeScreenManagerPressed(ActionEvent event) throws Exception{
-            Parent managerMenuParent = FXMLLoader.load(getClass().getResource("/sample/managerMenu.fxml"));
-            Scene managerMenuScene = new Scene(managerMenuParent);
+            Parent loginManagerParent = FXMLLoader.load(getClass().getResource("/sample/loginManager.fxml"));
+            Scene loginManagerScene = new Scene(loginManagerParent);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(managerMenuScene);
+            window.setScene(loginManagerScene);
             window.show();
     }
 }

@@ -11,11 +11,11 @@
 
 #config {
     -fx-background-color: transparent;
-    -fx-graphic: url("../img/settings.png");
+    -fx-graphic: url("../img/settings.png"); /*Icon made by Smashicons from www.flaticon.com*/
 }
 
 #config:hover {
-        -fx-graphic: url("../img/settingsh.png");
+        -fx-graphic: url("../img/settingsh.png"); /*Icon made by Smashicons from www.flaticon.com*/
 }
 
 .label{
@@ -28,6 +28,11 @@
     -fx-font: 55px Calibri;
     -fx-font-weight: bold;
     -fx-font-style: italic;
+}
+
+#manager {
+    -fx-text-fill: #00B065;
+    -fx-font-weight: bold;
 }
 
 .hyperlink {
