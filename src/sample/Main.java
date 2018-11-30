@@ -13,6 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("homePage.fxml"));
         primaryStage.setTitle("Smart Planting");
         primaryStage.setScene(new Scene(root, 960, 640));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
