@@ -15,7 +15,7 @@
 }
 
 #config:hover {
-        -fx-graphic: url("../img/settingsh.png"); /*Icon made by Smashicons from www.flaticon.com*/
+    -fx-graphic: url("../img/settingsh.png"); /*Icon made by Smashicons from www.flaticon.com*/
 }
 
 .label{
